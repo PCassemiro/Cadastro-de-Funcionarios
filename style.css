@@ -1,0 +1,9 @@
+*{
+    background-color: rgb(31, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+input{
+    display: grid;
+    grid-template-columns: auto;
+}
