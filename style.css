@@ -1,9 +1,44 @@
 *{
-    background-color: rgb(31, 31, 31);
     font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
+form{
+    
+    display: flex;
+    justify-content: center;/*Deixa o formulario centralizado*/
+    align-items: center;/*Deixa o formulario centralizado*/
+}
+
+p{
+    margin-bottom: 5px;
+}
+
+.Cadastro{
+    display: flex;
+    flex-direction: column;
+}
+
+.CpfData{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.CpfData div {
+    width: 100%;
+}
+
+#botao{
+    background-color: rgb(35, 112, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 10px;
+}
+
 input{
-    display: grid;
-    grid-template-columns: auto;
+    border-radius: 5px;
+    border-color: rgb(245, 245, 245);
+    height: 40px; 
+    border: none;
 }

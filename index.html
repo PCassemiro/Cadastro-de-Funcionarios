@@ -8,20 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form action="">
     <div class="Cadastro">
-    <h1>Cadastro de funcionarios</h1>
-    <p>Nome:</p>
-    <input type="text" name="nome" id="nome" required>
-    <p>E-Mail:</p>
-    <input type="email" name="email" id="email" required>
-    <p>CPF:</p>
-    <input type="number" name="cpf" id="cpf" required>
-    <p>Data de nascimento:</p>
-    <input type="date" name="data" id="data" required>
-    <p>Senha:</p>
-    <input type="password" name="Senha" id="Senha" required>
+        <h1>Cadastro de funcionarios</h1>
+        <p1>Preencha os campos abaixo para efetuar o cadastro</p1>
+        <p>Nome:</p>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" onmouseenter="passar()" required >
+        <p>E-Mail:</p>
+        <input type="email" name="email" id="email" placeholder="Digite seu E-Mail" onmouseenter="passar()" required >
+        <div class="CpfData">
+            <div>
+                <p>CPF:</p>
+                <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00" onmouseenter="passar()" minlength="11" maxlength="11" required>
+            </div>
+            <div>
+                <p>Data de nascimento:</p>
+                <input type="date" name="data" id="data" placeholder="00/00/2000" onmouseenter="passar()" required>
+            </div>
+        </div>
+        <p>Senha:</p>
+        <input type="password" name="Senha" id="Senha" placeholder="Digite sua senha" onmouseenter="passar()" minlength="8" required>
+        <input type="button" value="Cadastrar" id="botao" onclick="cadastrar()">
     </div>
     <!--  -->
-    <input type="button" value="Cadastrar" id="botao" onclick="cadastrar()">
+</form>
 </body>
 </html>
