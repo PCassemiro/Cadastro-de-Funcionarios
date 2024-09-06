@@ -19,7 +19,7 @@
         <div class="CpfData">
             <div>
                 <p>CPF:</p>
-                <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00" onmouseenter="passar()" minlength="11" maxlength="11" required>
+                <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" onmouseenter="passar()" minlength="14" maxlength="14" oninput="mascaraCPF(this)" required>
             </div>
             <div>
                 <p>Data de nascimento:</p>
